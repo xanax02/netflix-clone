@@ -15,8 +15,6 @@ const Main = () => {
     });
   }, []);
 
-  console.log(movie);
-
   const truncateText = (str, num) => {
     if (str?.length > num) {
       return str.slice(0, num) + "...";
@@ -51,7 +49,7 @@ const Main = () => {
               <p className="text-gray-400 text-sm mb-1">
                 Released: {movie?.release_date}
               </p>
-              <p className="text-gray-200 w-full md:max-w-[75%] lg:max-w-[50%] xl:max-w-[35%]">
+              <p className="text-gray-200 w-full md:max-w-[75%] lg:max-w-[50%] xl:max-w-[40%]">
                 {truncateText(movie?.overview, 150)}
               </p>
             </div>
